@@ -1,20 +1,21 @@
 [run]
-source = python_repo_template
-omit = python_repo_template/__main__.py
+source = genomic-region-identification
 
 [report]
-exclude_lines =
-    # Have to re-enable the standard pragma
+# Specify which regex patterns to ignore when calculating coverage.
+exclude_lines = 
+
+    # Standard method of skipping a line of code.
     pragma: no cover
 
-    # Don't complain about missing debug-only code:
+    # Exclude debug-only code.
     def __repr__
     if self\.debug
 
-    # Don't complain if tests don't hit defensive assertion code:
+    # Don't complain if the test come across defenseve assertion code.
     raise AssertionError
-    raise NotImplementedError
+    raise NotImplimentedError
 
     # Don't complain if non-runnable code isn't run:
     if 0:
-    if __name__ == .__main__.:
+    if __name__== .__main__.:
