@@ -1,24 +1,23 @@
-[project]
+[tool.poetry]
 name = "python-repo-template"
 version = "0.1.0"
-description = "Reusuable template as per my preferences."
-authors = [
-    {name = "Sam Huguet",email = "samhuguet1@gmail.com"}
-]
-license = {text = "MIT Licence"}
+description = "Reusable template as per my preferences."
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "numpy (>=2.3.3,<3.0.0)",
-    "black (>=25.1.0,<26.0.0)",
-    "isort (>=6.0.1,<7.0.0)",
-    "flake8 (>=7.3.0,<8.0.0)",
-    "pytest (>=8.4.2,<9.0.0)",
-    "mypy (>=1.18.1,<2.0.0)",
-    "pytest-cov (>=7.0.0,<8.0.0)",
-    "pre-commit (>=4.3.0,<5.0.0)"
-]
+license = "MIT"
+authors = ["Sam Huguet <samhuguet1@gmail.com>"]
 
+[tool.poetry.dependencies]
+python = "3.12.12"
+numpy = "2.3.5"
+
+[tool.poetry.group.dev.dependencies]
+black = ">=25.1.0,<26.0.0"
+isort = ">=6.0.1,<7.0.0"
+flake8 = ">=7.3.0,<8.0.0"
+pytest = ">=8.4.2,<9.0.0"
+mypy = ">=1.18.1,<2.0.0"
+pytest-cov = ">=7.0.0,<8.0.0"
+pre-commit = ">=4.3.0,<5.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

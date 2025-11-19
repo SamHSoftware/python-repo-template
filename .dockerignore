@@ -1,7 +1,9 @@
 # Ignore everything
-**
+
 
 # ... except for dependencies and source
 !Pipfile
 !Pipfile.lock
 !python_repo_template
+!conda-lock.yml
+!pyproject.toml

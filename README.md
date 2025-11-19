@@ -9,3 +9,7 @@ pipenv install --dev
 pipenv run pre-commit install -t pre-commit
 pipenv run pre-commit install -t pre-push
 ```
+
+
+TD:
+- automate conda lock, toml file generation
